@@ -20,7 +20,7 @@ stages:
     - task: Docker@2
       displayName: Build an image
       inputs:
-        containerRegistry: 'dockerhubconnection' #the name of the service connection
+        containerRegistry: 'DockerHubConnection' #the name of the service connection
         repository: '$(imageName)'
         command: 'build'
         Dockerfile: '**/Dockerfile'
